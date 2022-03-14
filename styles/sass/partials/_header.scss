@@ -1,6 +1,60 @@
 // index-header style
-.index-header {
-    background-image: url(../../../assets/home-image-1.jpg);
-    background-repeat: no-repeat;
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 1280px;
+    margin: 0 10%;
+    align-items: center;
+    .logo {
+        @include logo-small;
+        width: 50%; 
+    }
+}
+
+.background {
+    height: 100vh;
+    background-image: url(../assets/home-image-1.jpg);
     position: relative;
+    background-size: cover;
+    .header-box {
+        position: absolute;
+        display: flex;
+        bottom: -85px;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        max-width: 700px;
+        width: 100%;
+        object-fit: cover;
+        img {
+            width: 100%;
+            height: 100%
+        }
+    } 
+}
+
+.header-content {
+    height: 100%;
+    width: 60%;
+    margin: auto;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1 {
+        font-family: $headingFont;
+        font-size: 5.56rem;
+        font-weight: 900;
+        color: $tertiary;
+        margin-top: 0;
+        z-index: 5;
+    }
+    h2 {
+        @include heading (3.1rem, 6.7px);
+        color: $secondary;
+        margin-bottom: 0;
+        text-align: center;
+        z-index: 5;        
+    }
 }

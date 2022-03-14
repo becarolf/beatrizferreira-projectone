@@ -1,0 +1,23 @@
+// top navigation style
+.nav-bar {
+        width: 50%;
+        display: flex;
+        ul {
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+            li {
+                list-style: none;
+            }
+            a {
+                font-family: $bodyFont;
+                font-weight: 700;
+                line-height: 29px;
+                width: 100%;
+                font-size: 1rem;
+                color: $iceBlue;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+        }
+    }

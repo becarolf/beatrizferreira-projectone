@@ -6,6 +6,10 @@ $quaternary: #50e3c2;
 $quinary: #d2f9f1;
 $iceBlue: #fafffe;
 
+// site fonts
+$headingFont: 'Playfair Display SC', sans-serif;
+$bodyFont: 'Lato', sans-serif;
+
 
 // text styles
 @mixin logo-small {
@@ -17,7 +21,7 @@ $iceBlue: #fafffe;
 }
 
 @mixin nav {
-    font-family: 'Lato', sans-serif;
+    font-family: $bodyFont;
     font-weight: 700;
     font-size: 20px;
     text-align: center;
@@ -27,7 +31,7 @@ $iceBlue: #fafffe;
 }
 
 @mixin button-style ($width) {
-    font-family: 'Playfair Display SC', serif;
+    font-family: $headingFont;
     font-weight: 900;
     font-size: 20px;
     line-height: 32px;
@@ -40,7 +44,7 @@ $iceBlue: #fafffe;
 }
 
 @mixin heading ($size, $spacing) {
-    font-family: 'Lato', sans-serif;
+    font-family: $bodyFont;
     font-weight: 700;
     font-size: $size;
     letter-spacing: $spacing;
