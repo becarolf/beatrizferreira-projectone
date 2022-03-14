@@ -225,3 +225,21 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+html {
+  font-family: 'Lato', sans-serif;
+  font-size: 125%;
+  color: #2c2c2c;
+}
+
+.wrapper {
+  max-width: 1280px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.index-header {
+  background-image: url(../../../assets/home-image-1.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+}

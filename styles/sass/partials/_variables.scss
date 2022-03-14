@@ -1,0 +1,57 @@
+// site colors
+$primary: #2c2c2c;
+$secondary: #0c5f4c;
+$tertiary: #063974;
+$quaternary: #50e3c2;
+$quinary: #d2f9f1;
+$iceBlue: #fafffe;
+
+
+// text styles
+@mixin logo-small {
+    font-family: 'Playfair Display SC', serif;
+    font-weight: 900;
+    font-size: 1.73rem; /* 34.6px */
+    text-align: center;
+    color: $quaternary;
+}
+
+@mixin nav {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    line-height: 29px;
+    letter-spacing: 1px;
+    color: $iceBlue;
+}
+
+@mixin button-style ($width) {
+    font-family: 'Playfair Display SC', serif;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 120px;
+    height: 40px;
+    background-color: $tertiary;
+    color: $iceBlue;
+}
+
+@mixin heading ($size, $spacing) {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: $size;
+    letter-spacing: $spacing;
+    line-height: 29px;
+    text-align: center;
+    color: $iceBlue;
+}
+
+
+// ai na hora de chamar isso ficaria:
+// h3 {
+
+// }
+// @include heading(30px, 1px);
