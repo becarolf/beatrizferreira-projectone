@@ -277,7 +277,7 @@ p {
 
 .background {
   height: 100vh;
-  background-image: url(../assets/home-image-1.jpg);
+  background-image: url("../project-folders/home/assets/home-image-1.jpg");
   position: relative;
   background-size: cover;
 }
