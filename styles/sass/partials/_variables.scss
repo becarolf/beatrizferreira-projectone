@@ -30,15 +30,17 @@ $bodyFont: 'Lato', sans-serif;
     color: $iceBlue;
 }
 
-@mixin button-style ($width) {
+@mixin button-style ($width, $height) {
     font-family: $headingFont;
     font-weight: 900;
-    font-size: 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
     line-height: 32px;
     letter-spacing: 1px;
     text-align: center;
-    width: 120px;
-    height: 40px;
+    width: $width;
+    height: $height;
     background-color: $tertiary;
     color: $iceBlue;
 }
@@ -48,9 +50,17 @@ $bodyFont: 'Lato', sans-serif;
     font-weight: 700;
     font-size: $size;
     letter-spacing: $spacing;
-    line-height: 29px;
+    line-height: 58px;
     text-align: center;
     color: $iceBlue;
+}
+
+@mixin body-text {
+    font-family: $bodyFont;
+    font-weight: 400;
+    font-size: 1rem; // 20px //
+    line-height: 32px;
+    letter-spacing: 2px;
 }
 
 

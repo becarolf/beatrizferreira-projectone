@@ -1,0 +1,15 @@
+.gallery {
+    background-color: $quinary;
+    .wrapper {
+        width: 90%;
+        height: 500px;
+    }
+    ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+    }
+    li {
+        flex-basis: 30%;
+    }
+}
