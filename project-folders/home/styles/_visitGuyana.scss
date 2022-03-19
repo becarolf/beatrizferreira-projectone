@@ -21,18 +21,19 @@
 }
 
 .text-container {
-    @include heading(1.75rem, 3.8px);
-    color: $secondary;
-    margin-bottom: 0;
+    h3 {
+        @include heading(1.75rem, 3.8px);
+        color: $secondary;
+        margin-bottom: 0;
+    }
+    
     p {
         @include body-text;
-        color: $primary;
         margin-top: 0;
         margin-bottom: 0;
         width: 90%;
     }
     a {
-        @include button-style(210px, 45px);
-
+        @include anchor-style(210px, 45px);
     }
 }

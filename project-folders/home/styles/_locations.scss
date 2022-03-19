@@ -1,0 +1,37 @@
+.plan-ahead {
+    background-color: $quinary;
+    display: flex;
+    margin-bottom: 30px;
+    .img-plan {
+        box-shadow: 20px 20px $quaternary;
+        display: flex;
+        img {
+            display: block;
+        }
+    }
+}
+
+.plan-text {
+    h3 {
+        @include heading (1.75rem, 3.8px);
+        color: $secondary;
+        margin-bottom: 0;
+    }
+    p {
+        @include body-text;
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 40%;
+    }
+    a {
+        @include anchor-style(160px, 50px);
+    }
+}
+
+
+
+.banner {
+    img {
+        width: 100%;
+    }
+}

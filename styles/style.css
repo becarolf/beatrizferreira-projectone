@@ -232,8 +232,14 @@ html {
   color: #2c2c2c;
 }
 
-p {
+h1, h2, h3, h4, p {
   margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 125%;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -324,7 +330,6 @@ p {
   letter-spacing: 6.7px;
   line-height: 58px;
   text-align: center;
-  color: #fafffe;
   color: #0c5f4c;
   margin-bottom: 0;
   text-align: center;
@@ -402,25 +407,24 @@ p {
   display: block;
 }
 
-.text-container {
+.text-container h3 {
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-size: 1.75rem;
   letter-spacing: 3.8px;
   line-height: 58px;
   text-align: center;
-  color: #fafffe;
   color: #0c5f4c;
   margin-bottom: 0;
 }
 
 .text-container p {
+  color: #2c2c2c;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   line-height: 32px;
   letter-spacing: 2px;
-  color: #2c2c2c;
   margin-top: 0;
   margin-bottom: 0;
   width: 90%;
@@ -440,6 +444,18 @@ p {
   color: #fafffe;
 }
 
+.text-container a:hover {
+  background-color: #fafffe;
+  border: 2px solid #063974;
+  color: #063974;
+}
+
+.text-container a:focus {
+  background-color: #fafffe;
+  border: 1px solid #063974;
+  color: #063974;
+}
+
 .gallery {
   padding: 100px 10%;
   display: -webkit-box;
@@ -453,4 +469,153 @@ p {
 
 .gallery img {
   width: 30%;
+}
+
+.plan-ahead {
+  background-color: #d2f9f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.plan-ahead .img-plan {
+  -webkit-box-shadow: 20px 20px #50e3c2;
+          box-shadow: 20px 20px #50e3c2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.plan-ahead .img-plan img {
+  display: block;
+}
+
+.plan-text h3 {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 1.75rem;
+  letter-spacing: 3.8px;
+  line-height: 58px;
+  text-align: center;
+  color: #0c5f4c;
+  margin-bottom: 0;
+}
+
+.plan-text p {
+  color: #2c2c2c;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 32px;
+  letter-spacing: 2px;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 40%;
+}
+
+.plan-text a {
+  font-family: "Playfair Display SC", sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  width: 160px;
+  height: 50px;
+  background-color: #063974;
+  color: #fafffe;
+}
+
+.plan-text a:hover {
+  background-color: #fafffe;
+  border: 2px solid #063974;
+  color: #063974;
+}
+
+.plan-text a:focus {
+  background-color: #fafffe;
+  border: 1px solid #063974;
+  color: #063974;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.trip {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin: 8% 15%;
+}
+
+.trip h3 {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 1.75rem;
+  letter-spacing: 3.8px;
+  line-height: 58px;
+  text-align: center;
+  color: #0c5f4c;
+}
+
+.trip p {
+  color: #2c2c2c;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 32px;
+  letter-spacing: 2px;
+  padding: 15px 0;
+}
+
+.trip a {
+  font-family: "Playfair Display SC", sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  width: 210px;
+  height: 45px;
+  background-color: #063974;
+  color: #fafffe;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.trip a:hover {
+  background-color: #fafffe;
+  border: 2px solid #063974;
+  color: #063974;
+}
+
+.trip a:focus {
+  background-color: #fafffe;
+  border: 1px solid #063974;
+  color: #063974;
+}
+
+footer {
+  background-color: #2c2c2c;
+}
+
+footer p {
+  color: #2c2c2c;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 32px;
+  letter-spacing: 2px;
+  color: #fafffe;
+  text-align: center;
 }

@@ -1,0 +1,18 @@
+.trip {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 8% 15%;
+    h3 {
+        @include heading (1.75rem, 3.8px);
+        color: $secondary;
+    }
+    p {
+        @include body-text;
+        padding: 15px 0;
+    }
+    a {
+        @include anchor-style (210px, 45px);
+        align-self: center;
+    }
+}

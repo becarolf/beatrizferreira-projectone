@@ -1,0 +1,8 @@
+footer {
+    background-color: $primary;
+    p {
+        @include body-text;
+        color: $iceBlue;
+        text-align: center;
+    }
+}
