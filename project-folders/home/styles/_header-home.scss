@@ -1,17 +1,12 @@
 // index-header style
-.wrapper {
+.logo {
     display: flex;
-    justify-content: space-between;
-    width: 1280px;
-    margin: 0 10%;
-    align-items: center;
-    .logo {
-        @include logo-small;
-        width: 50%; 
+    @include logo-small;
+    width: 50%; 
     }
-}
 
 .background {
+    // display: flex;
     height: 100vh;
     background-image: url("../project-folders/home/assets/home-image-1.jpg");
     position: relative;
