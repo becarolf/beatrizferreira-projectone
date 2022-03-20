@@ -1,0 +1,42 @@
+// index-header style
+.logo {
+    display: flex;
+    @include logo-small;
+    width: 50%; 
+    }
+
+.background {
+    // display: flex;
+    height: 80vh;
+    background-image: url("../project-folders/contact/assets/contact-image-1.jpg");
+    position: relative;
+    background-size: cover;
+    .contact-form {
+        position: absolute;
+        display: flex;
+        bottom: -400px;
+        left: 10%;
+        margin: 0;
+        padding: 0;
+        max-width: 700px;
+        width: 100%;
+    } 
+}
+
+.header-content {
+    height: 100%;
+    width: 60%;
+    margin: auto;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h2 {
+        @include heading (4.35rem, 9px);
+        color: $iceBlue;
+        margin-bottom: 0;
+        align-self: start;
+        z-index: 5;        
+    }
+}

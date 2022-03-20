@@ -2,6 +2,8 @@
 @import './partials/variables';
 @import './partials/typography';
 @import './partials/baseStyles';
+
+// home page style
 @import '../../project-folders/home/styles/header-home';
 @import '../../project-folders/home/styles/nav-home';
 @import '../../project-folders/home/styles/visitGuyana';
@@ -10,3 +12,7 @@
 @import '../../project-folders/home/styles/locations';
 @import '../../project-folders/home/styles/free-trip';
 @import '../../project-folders/home/styles/footer';
+
+@import '../../project-folders/contact/styles/header-contact';
+@import '../../project-folders/contact/styles/form';
+@import '../../project-folders/contact/styles/_contact-social';

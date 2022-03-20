@@ -619,3 +619,188 @@ footer p {
   color: #fafffe;
   text-align: center;
 }
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Playfair Display SC', serif;
+  font-weight: 900;
+  font-size: 1.73rem;
+  /* 34.6px */
+  text-align: center;
+  color: #50e3c2;
+  width: 50%;
+}
+
+.background {
+  height: 80vh;
+  background-image: url("../project-folders/contact/assets/contact-image-1.jpg");
+  position: relative;
+  background-size: cover;
+}
+
+.background .contact-form {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: -400px;
+  left: 10%;
+  margin: 0;
+  padding: 0;
+  max-width: 700px;
+  width: 100%;
+}
+
+.header-content {
+  height: 100%;
+  width: 60%;
+  margin: auto;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header-content h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 4.35rem;
+  letter-spacing: 9px;
+  line-height: 58px;
+  text-align: center;
+  color: #fafffe;
+  margin-bottom: 0;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  z-index: 5;
+}
+
+.contact-form {
+  max-width: 1000px;
+  margin: 70px auto;
+  padding: 40px 80px;
+  font-family: "Lato", sans-serif;
+}
+
+.container-form {
+  background-color: white;
+  -webkit-box-shadow: 20px 20px #50e3c2;
+          box-shadow: 20px 20px #50e3c2;
+  width: 920px;
+}
+
+form label {
+  width: 10%;
+  margin-right: 5px;
+  font-size: 1rem;
+}
+
+form input {
+  width: 40%;
+  border-bottom: 1px solid #50e3c2;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  color: #2c2c2c;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 40px;
+  padding: 20px 20px;
+}
+
+form textarea {
+  border: 1px solid #50e3c2;
+  resize: none;
+  color: #2c2c2c;
+  font-family: "Lato", sans-serif;
+  width: 850px;
+  padding: 30px 20px;
+}
+
+input[type="submit"] {
+  background-color: #063974;
+  color: #fafffe;
+  cursor: pointer;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-family: "Playfair Display SC", sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin: 40px 0;
+  text-align: center;
+  width: 850px;
+  height: 40px;
+}
+
+input[type="submit"]:hover {
+  background-color: #d2f9f1;
+  border: 2px solid #0c5f4c;
+  color: #063974;
+}
+
+input[type="submit"]:focus {
+  background-color: #d2f9f1;
+  border: 2px solid #0c5f4c;
+  color: #063974;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  height: 400px;
+}
+
+.contact address {
+  font-style: normal;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  line-height: 32px;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #2c2c2c;
+  font-weight: 200;
+}
+
+.contact .email {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+}
+
+.social-icons a {
+  padding: 10px;
+}
