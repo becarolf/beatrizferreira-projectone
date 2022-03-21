@@ -12,12 +12,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display+SC:ital,wght@1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="styles/contact.css">
 </head>
 <body>
     
     <header>
         <div class="background">
-            
+            <div class="navbar">
             <div class="logo">
                 <p>Beachstays</p>
             </div> <!-- end of .logo -->
@@ -31,32 +32,37 @@
                 </ul>
             </div> <!-- end of .nav-bar -->
 
-    <div class="header-content">
-        <h2>Get in Touch</h2>
-    </div> <!-- end of .header-content -->
-    
+            </div><!-- end of .navbar -->
+      
+            <div class="header-content">
+                <h2>Get in Touch</h2>
+            </div> <!-- end of .header-content -->
+          </div>
 
     <div class="wrapper">
         
         <section class="contact-form">
             <form action="">
                 <div class="container-form">
-                    <label for="name"></label>
+                    <div class="user-info">
+                    <label for="name" class="sr-only"></label>
                     <input type="text" name="firstname" id="name" required="true" placeholder="Name" maxlength="70">
 
-                    <label for="email"></label>
+                    <label for="email" class="sr-only"></label>
                     <input type="email" id="email" required="true" placeholder="Email address" maxlength="70">
-
+                    </div> <!-- end of .user-info -->
+                    
                     <label for="message"></label>
                     <textarea name="message" id="message" cols="70" rows="10" placeholder="Message"></textarea>
 
-                    <input type="submit" value="submit">
+                    <!-- <input type="submit" value="submit"> -->
+                    <button type="submit" value="submit">Submit</button>
                 </div> <!-- end of .container-form -->
             </form>
         </section> <!-- end of .contact-form -->
 
         
-        <div class="contact">
+        <div class="social-media">
 
             <div class="social-icons">
                 <a href="#">
