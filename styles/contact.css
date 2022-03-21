@@ -472,6 +472,21 @@ body {
   width: 30%;
 }
 
+.container-one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container-two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .plan-ahead {
   background-color: #d2f9f1;
   display: -webkit-box;
