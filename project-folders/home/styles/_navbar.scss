@@ -18,6 +18,11 @@
                 color: $iceBlue;
                 text-decoration: none;
                 text-transform: uppercase;
+                &:hover,
+                &:focus,
+                &:active {
+                    color: $quaternary;
+                }
             }
         }
     }

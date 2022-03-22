@@ -1,138 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@1,900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display+SC:ital,wght@1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/style.css">
-</head>
-<body>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display+SC:ital,wght@1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
     <header>
-        <div class="background">
-            <div class="navbar">
-            <div class="logo">
-                <p>Beachstays</p>
-            </div> <!-- end of .logo -->
-        
-            <div class="nav-bar">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div> <!-- end of .nav-bar -->
+      <div class="background">
+        <div class="navbar">
+          <div class="logo">
+            <p>Beachstays</p>
+          </div>
+          <!-- end of .logo -->
 
-            </div><!-- end of .navbar -->
-      
-            <div class="header-content">
-                <h2>Blog</h2>
-            </div> <!-- end of .header-content -->
+          <div class="nav-bar">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <!-- end of .nav-bar -->
 
+          <div class="mobile-menu-icon" onClick="toggleMenu()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div>
+        <div id="mobileMenu">
+          <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="/blog/blog">BLOG</a></li>
+            <li><a href="/contact">CONTACT</a></li>
+          </ul>
+        </div>
+        <!-- end of .mobileMenu -->
 
-            <div class="post-img">
-                <img src="./project-folders/blog/assets/post-image.jpg" alt="Front view of a beach house.">
-            </div> <!-- end of .post-img -->
-        </div> <!-- end of .background -->
+        <div class="header-content">
+          <h2>Blog</h2>
+        </div>
+      </div>
     </header>
 
     <main>
+      <div class="container">
         <div class="post-content">
-            <div class="post">
-                <div class="article">
-                    <h3>Five days of oceans seas</h3>
-                    <p class="sub-title">Monday January 21th, 2019 by <span>Bora</span></p>
+          <div class="post-img">
+            <img
+              src="./project-folders/blog/assets/post-image.jpg"
+              alt="Front view of a beach house."
+            />
+          </div>
+          <div class="post">
+            <div class="article">
+              <h3>Five days of oceans seas</h3>
+              <p class="sub-title">
+                Monday January 21th, 2019 by <span>Bora</span>
+              </p>
 
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores amet nulla beatae! Aliquam excepturi unde aspernatur laborum veniam eveniet cumque, libero non qui aliquid adipisci, accusamus facere explicabo vel! Adipisci!</p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Asperiores amet nulla beatae! Aliquam excepturi unde aspernatur
+                laborum veniam eveniet cumque, libero non qui aliquid adipisci,
+                accusamus facere explicabo vel! Adipisci!
+              </p>
 
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet veritatis provident consectetur sunt obcaecati, dolorem ipsam tempore porro saepe aliquam necessitatibus illum officia. Ut distinctio velit debitis aliquid mollitia voluptate.</p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet
+                veritatis provident consectetur sunt obcaecati, dolorem ipsam
+                tempore porro saepe aliquam necessitatibus illum officia. Ut
+                distinctio velit debitis aliquid mollitia voluptate.
+              </p>
 
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos voluptatibus maxime quam necessitatibus nostrum, consequatur facilis mollitia, repellendus corporis officiis fuga ipsam amet. Architecto repudiandae eos quo nostrum quis laudantium deleniti ipsum odit cum, itaque eum nisi voluptate odio ex fuga perferendis minus laborum atque, tempore libero facere. Error quo repudiandae vitae pariatur similique quam quos omnis perspiciatis ipsum, dignissimos esse id, distinctio enim odio, vel rerum aliquid beatae. Ad expedita nobis assumenda? Aspernatur ipsum facilis nam officia quos deleniti.</p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos
+                voluptatibus maxime quam necessitatibus nostrum, consequatur
+                facilis mollitia, repellendus corporis officiis fuga ipsam amet.
+                Architecto repudiandae eos quo nostrum quis laudantium deleniti
+                ipsum odit cum, itaque eum nisi voluptate odio ex fuga
+                perferendis minus laborum atque, tempore libero facere. Error
+                quo repudiandae vitae pariatur similique quam quos omnis
+                perspiciatis ipsum, dignissimos esse id, distinctio enim odio,
+                vel rerum aliquid beatae. Ad expedita nobis assumenda?
+                Aspernatur ipsum facilis nam officia quos deleniti.
+              </p>
 
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed eligendi quod velit. Molestias tempora ducimus velit facilis vero delectus libero!</p>
-                </div> <!-- end of .article -->
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed
+                eligendi quod velit. Molestias tempora ducimus velit facilis
+                vero delectus libero!
+              </p>
+            </div>
+          </div>
+          <div class="comments">
+            <h4>Comments:</h4>
+            <div class="comment-posted">
+              <div class="comment_image-one">
+                <img
+                  src="./project-folders/blog/assets/comment-image.jpg"
+                  alt="Portrait of a man smiling at the camera"
+                />
+              </div>
+              <!-- end of .comment-image-1 -->
+              <div class="comment-one">
+                <h5>Tuesday October 9th, 2019 by Reyansh</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perspiciatis id quis, cum libero harum error beatae eligendi
+                  blanditiis iste, adipisci eveniet voluptatum inventore ipsa
+                  soluta temporibus dolor officia magni.
+                </p>
+              </div>
+              <!-- end of .comment-1 -->
+            </div>
+            <!-- end of .comment-posted -->
 
-                
+            <div class="comment-posted-two">
+              <div class="comment-image-two">
+                <img
+                  src="./project-folders/blog/assets/comment-image2.jpg"
+                  alt="Portrait of a woman with red reflective sunglasses posing to the camera"
+                />
+              </div>
+              <!-- end of .comment-image-two -->
+              <div class="comment-two">
+                <h5>Tuesday October 9th, 2019 by Olivia</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perspiciatis id quis, cum libero harum error beatae eligendi
+                  blanditiis iste, adipisci eveniet voluptatum inventore ipsa
+                  soluta temporibus dolor officia magni.
+                </p>
+              </div>
+              <!-- end of .comment-two -->
+            </div>
+            <!-- end of .comment-posted-two -->
+          </div>
+          <section class="blog-form">
+            <form action="">
+              <div class="form-container">
+                <div class="user-info">
+                  <label for="name" class="sr-only"></label>
+                  <input
+                    type="text"
+                    name="firstname"
+                    id="name"
+                    required="true"
+                    placeholder="Name"
+                    maxlength="70"
+                  />
 
-                <div class="comments">
-                    <h4>Comments:</h4>
-                        <div class="comment-posted">
-                            <div class="comment_image-one">
-                                <img src="./project-folders/blog/assets/comment-image.jpg" alt="Portrait of a man smiling at the camera">
-                            </div> <!-- end of .comment-image-1 -->
-                            <div class="comment-one">
-                                <h5>Tuesday October 9th, 2019 by Reyansh</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis id quis, cum libero harum error beatae eligendi blanditiis iste, adipisci eveniet voluptatum inventore ipsa soluta temporibus dolor officia magni.</p>
-                            </div> <!-- end of .comment-1 -->
-                        </div> <!-- end of .comment-posted -->
+                  <label for="email" class="sr-only"></label>
+                  <input
+                    type="email"
+                    id="email"
+                    required="true"
+                    placeholder="Email address"
+                    maxlength="70"
+                  />
+                </div>
+                <!-- end of .user-info -->
 
-                        <div class="comment-posted-two">
-                            <div class="comment-image-two">
-                                <img src="./project-folders/blog/assets/comment-image2.jpg" alt="Portrait of a woman with red reflective sunglasses posing to the camera">
-                            </div> <!-- end of .comment-image-two -->
-                            <div class="comment-two">
-                                <h5>Tuesday October 9th, 2019 by Olivia</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis id quis, cum libero harum error beatae eligendi blanditiis iste, adipisci eveniet voluptatum inventore ipsa soluta temporibus dolor officia magni.</p>
-                            </div> <!-- end of .comment-two -->
-                        </div> <!-- end of .comment-posted-two -->
-                            
-                        </div> <!-- end of .comments -->
+                <label for="message" class="sr-only"></label>
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="50"
+                  rows="10"
+                  placeholder="Comment"
+                ></textarea>
 
+                <button type="submit" value="submit">Post comment</button>
+              </div>
+              <!-- end of .form-container -->
+            </form>
+          </section>
 
-                        <section class="blog-form">
-                            <form action="">
-                                <div class="form-container">
-                                    <div class="user-info">
-                                        <label for="name"></label>
-                                        <input type="text" name="firstname" id="name" required="true" placeholder="Name" maxlength="70">
+          <!-- end of .comments -->
+        </div>
+        <aside class="sidebar">
+          <div class="sidebar-img">
+            <img
+              src="./project-folders/blog/assets/sidebar-image.jpg"
+              alt="Beautiful view of a water beach house."
+            />
+          </div>
 
-                                        <label for="email"></label>
-                                        <input type="email" id="email" required="true" placeholder="Email address" maxlength="70">
-                                    </div> <!-- end of .user-info -->
-                                
-                                    <label for="message"></label>
-                                    <textarea name="message" id="message" cols="50" rows="10" placeholder="Comment"></textarea>
+          <div class="sidebar-post">
+            <div class="our-mission">
+              <h5>Our mission</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellat non exercitationem obcaecati.
+              </p>
+              <a href="Find out more."></a>
+            </div>
+            <!-- end of .our-mission -->
 
-                                    <button type="submit" value="submit">Post comment</button>
-                                </div> <!-- end of .form-container -->
-                            </form>
-                        </section> <!-- end of .contact-form -->
-                        </div> <!-- end of .post -->
-                        
-
-                        <aside class="sidebar">
-                            <div class="sidebar-img">
-                                <img src="./project-folders/blog/assets/sidebar-image.jpg" alt="Beautiful view of a water beach house.">
-                            </div> <!-- end of .sidebar-img -->
-
-                            <div class="sidebar-post">
-                                <div class="our-mission">
-                                    <h5>Our mission</h5>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat non exercitationem obcaecati.</p>
-                                    <a href="Find out more."></a>
-                                </div> <!-- end of .our-mission -->
-
-                                <div class="recent-posts">
-                                    <h5>Recent Posts</h5>
-                                            <p>Lorem ipsum dolor sit.</p>
-                                            <p>Lorem ipsum dolor sit.</p>
-                                            <p>Lorem ipsum dolor sit.</p>
-                                            <p>Lorem ipsum dolor sit.</p>
-                                </div> <!-- end of .recent-posts -->
-                            </div> <!-- end of .sidebar-post -->
-                        </aside> <!-- end of .sidebar -->
-        </div> <!-- end of .post-content -->
+            <div class="recent-posts">
+              <h5>Recent Posts</h5>
+              <p>Lorem ipsum dolor sit.</p>
+              <p>Lorem ipsum dolor sit.</p>
+              <p>Lorem ipsum dolor sit.</p>
+              <p>Lorem ipsum dolor sit.</p>
+            </div>
+            <!-- end of .recent-posts -->
+          </div>
+          <!-- end of .sidebar-post -->
+        </aside>
+        <!-- end of .sidebar -->
+      </div>
     </main>
 
-
     <footer>
-    <p>Copyright © 2022 Juno College • 👩🏻‍💻 Beatriz Ferreira</p>
-    </footer> <!-- end of footer -->
+      <p>Copyright © 2022 Juno College • 👩🏻‍💻 Beatriz Ferreira</p>
+    </footer>
+    <!-- end of footer -->
+    <script src="../../mobileMenu.js"></script>
+  </body>
+</html>

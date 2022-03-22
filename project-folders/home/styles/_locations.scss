@@ -1,37 +1,70 @@
-.plan-ahead {
-    background-color: $quinary;
+.container-plan-ahead {
     display: flex;
-    margin-bottom: 30px;
-    .img-plan {
-        box-shadow: 20px 20px $quaternary;
-        display: flex;
-        img {
-            display: block;
-        }
-    }
-}
-
-.plan-text {
+    background-color: $quinary;
+    height: 750px;
     h3 {
         @include heading (1.75rem, 3.8px);
         color: $secondary;
         margin-bottom: 0;
+        text-align: left
     }
     p {
         @include body-text;
-        margin-top: 0;
-        margin-bottom: 0;
-        width: 40%;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        // width: 40%;
     }
     a {
         @include anchor-style(160px, 50px);
+    }
+    img {
+        box-shadow: 20px 20px $quaternary;
+        top: -10;
+        }
+}
+
+.plan-ahead {
+    display: block;
+    margin-bottom: 30px;
+    .img-plan {
+        display: flex; 
+        width: 100%;
+    }
+    .plan-text {
+           margin-right: 10%;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    p {
+         width: 50%;
+    }
+}
+
+}
+
+.new-locations {
+    h3 {
+        text-align: right;
+    }
+    .location-text {
+                margin-left: 10%;
+        margin-top: 60px;
+        margin-bottom: 40px;
+        text-align: right;
+        p {
+            width: 50%;
+            margin-right: 0;
+        }
     }
 }
 
 
 
+
+
+//BANNER 
 .banner {
     img {
         width: 100%;
+        position: relative;
     }
 }

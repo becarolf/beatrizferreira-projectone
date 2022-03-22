@@ -1,53 +1,118 @@
 .logo {
-    display: flex;
-    @include logo-small;
-    width: 50%; 
+  display: flex;
+  @include logo-small;
+  width: 50%;
+}
+
+#mobileMenu {
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: 40px;
+  ul {
+    list-style: none;
+    background: #89a19ca6;
+    li {
+      text-align: right;
+      margin-right: 10%;
     }
+    a {
+      color: $quinary;
+      text-decoration: none;
+    }
+  }
+}
+
+.mobile-menu-icon {
+  display: none;
+  cursor: pointer;
+
+  div {
+    width: 35px;
+    height: 3px;
+    background: white;
+    margin: 6px 0;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+}
 
 .background {
-    // display: flex;
-    height: 80vh;
-    background: url("../project-folders/blog/assets/blog-image-1.jpg") center / cover no-repeat;
-    position: relative;
-    .post-img {
-        position: absolute;
-        display: flex;
-        bottom: -440px;
-        left: 0;
-        margin: 0;
-        padding: 0;
-        box-shadow: 20px 20px $quaternary;
-        max-width: 942px;
-        width: 100%;
-        img {
-            width: 100%;
-            height: 100%
-        }
-    } 
-}
-// Navbar - shared 
-.navbar {
+  // display: flex;
+  height: 80vh;
+  background: url("../project-folders/blog/assets/blog-image-1.jpg") center /
+    cover no-repeat;
+  position: relative;
+  .post-img {
+    position: absolute;
     display: flex;
-    margin-left: 10%;
-    margin-right: 10%;
-    align-items: center;
+    bottom: -230px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    box-shadow: 20px 20px $quaternary;
+    max-width: 600px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
-// 
-
+// Navbar - shared
+.navbar {
+  height: 40px;
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  align-items: center;
+}
 
 .header-content {
-    height: 100%;
-    margin-left: 10%;
-    z-index: 10;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    h2 {
-        @include heading (4.35rem, 9px);
-        color: $iceBlue;
-        margin-bottom: 0;
-        align-self: start;
-        z-index: 5;        
+  height: 100%;
+  margin-left: 10%;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h2 {
+    @include heading(4.35rem, 9px);
+    color: $iceBlue;
+    margin-bottom: 0;
+    align-self: start;
+    z-index: 5;
+    margin-top: -100px;
+  }
+}
+
+@media (max-width: 980px) {
+  .background {
+    height: 50vh;
+  }
+
+  .navbar {
+    margin-left: 5%;
+    margin-right: 5%;
+    .logo {
+      width: 40%;
     }
+    .nav-bar {
+      width: 60%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .mobile-menu-icon {
+    display: block;
+  }
+  .background {
+    height: 50vh;
+  }
+  .navbar {
+    justify-content: space-between;
+    .nav-bar {
+      display: none;
+    }
+  }
 }
