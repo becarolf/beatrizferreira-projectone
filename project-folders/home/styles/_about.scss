@@ -1,68 +1,37 @@
 .about {
-    display: flex;
-    margin: 10% 0;
-    h4 {
-        @include heading (1.5rem, 3.2px);
-        color: $secondary;
-        text-align: left;
-    }
-    p {
-        @include body-text;
-    }
+  display: flex;
+  margin: 10% 0;
+  h4 {
+    @include heading(1.5rem, 3.2px);
+    color: $secondary;
+    text-align: left;
+  }
+  p {
+    @include body-text;
+  }
 }
 
 .container-one,
 .container-two {
-    display: flex;
-        justify-content: space-between;
-.aboutInfo {
-    width: 40%;
-}
-}
-
-.aboutContent {
+  display: flex;
+  justify-content: space-between;
+  .about-info {
+    width: 45%;
+  }
+  .about-content {
     display: flex;
     align-items: center;
     h4 {
-        padding-left: 15px;
+      padding-left: 15px;
     }
     p {
-        padding-left: 80px;
+      padding-left: 80px;
     }
     i::before {
-        padding: 15px;
-        border-radius: 50%;
-        color: $iceBlue;
-        background-color: $quaternary;
+      padding: 15px;
+      border-radius: 50%;
+      color: $iceBlue;
+      background-color: $quaternary;
     }
+  }
 }
-
-.heading-one {
-    content: "\e3af";
-    font-family: 'FontAwesome';
-    }
-
-
-.heading-two::before {
-    content: "\f0c0";
-    font-family: 'FontAwesome';
-}
-
-.heading-three::before {
-    content: "\f15b";
-    font-family: 'FontAwesome';
-}
-
-.heading-four::before {
-    content: "\f879";
-    font-family: 'FontAwesome';
-}
-
-
-//     content: " ";
-//     width: 50px;
-//     height: 50px;
-//     border-radius: 50%;
-//     background-color: $quaternary;
-//     position: absolute;
-//     font-family: 'FontAwesome';

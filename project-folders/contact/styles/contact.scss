@@ -1,104 +1,135 @@
-@import '../../../styles/sass/style.scss';
+@import "../../../styles/sass/style.scss";
 
 .logo {
-    display: flex;
-    @include logo-small;
-    width: 50%; 
+  display: flex;
+  @include logo-small;
+  width: 50%;
+}
+
+.navbar {
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  align-items: center;
+}
+
+#mobileMenu {
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: 40px;
+  ul {
+    list-style: none;
+    background: #89a19ca6;
+    li {
+      text-align: right;
+      margin-right: 10%;
     }
+    a {
+      color: $quinary;
+      text-decoration: none;
+    }
+  }
+}
+
+.mobile-menu-icon {
+  display: none;
+  cursor: pointer;
+
+  div {
+    width: 35px;
+    height: 3px;
+    background: white;
+    margin: 6px 0;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+}
 
 .background {
-    // display: flex;
-    height: 80vh;
-    background-image: url("../project-folders/contact/assets/contact-image-1.jpg");
-    position: relative;
-    background-size: cover;
-    .contact-form {
-        position: absolute;
-        display: flex;
-        bottom: -400px;
-        left: 10%;
-        margin: 0;
-        padding: 0;
-        max-width: 700px;
-        width: 100%;
-    } 
-}
-// Navbar - shared 
-.navbar {
+  // display: flex;
+  height: 60vh;
+  background-image: url("../project-folders/contact/assets/contact-image-1.jpg");
+  position: relative;
+  background-size: cover;
+  .contact-form {
+    position: absolute;
     display: flex;
-    margin-left: 10%;
-    margin-right: 10%;
-    align-items: center;
+    bottom: -400px;
+    left: 10%;
+    margin: 0;
+    padding: 0;
+    max-width: 700px;
+    width: 100%;
+  }
 }
-// 
 
 .header-content {
-    height: 60%;
-    width: 60%;
-    margin-left: 10%;
-    margin-right: 10%;
-    z-index: 10;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    h2 {
-        @include heading (4.35rem, 9px);
-        color: $iceBlue;
-        margin-bottom: 0;
-        align-self: start;
-        z-index: 5;        
-    }
+  height: 60%;
+  width: 60%;
+  margin-left: 10%;
+  margin-right: 10%;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    @include heading(4.35rem, 9px);
+    color: $iceBlue;
+    margin-bottom: 0;
+    align-self: start;
+    z-index: 5;
+  }
 }
-
 
 // form
 .wrapper {
-    display: flex;
-    height: 50vh;;
-    align-items: center;
+  display: flex;
+  height: 50vh;
+  align-items: center;
 }
 
 .contact-form {
-   display: flex;
-   position: relative;
-    margin: 70px auto;
-    box-shadow: 20px 20px $quaternary;
-    font-family: $bodyFont;
-    width: 60%;
-    top: -230px;
+  display: flex;
+  position: relative;
+  // margin: 70px auto;
+  box-shadow: 20px 20px $quaternary;
+  font-family: $bodyFont;
+  width: 70%;
+  top: -180px;
 }
 
 form {
-    background-color: white;
-    padding: 10px;
+  background-color: white;
+  padding: 35px;
 }
 
 .container-form {
-    .user-info {
-        display: flex;
-        justify-content: space-between;
-    }
+  .user-info {
+    display: flex;
+    justify-content: space-between;
+  }
 
-    input {
-        width: 48%;
-        border-bottom: 1px solid $quaternary;
-        border-top-style: hidden;
-        border-right-style: hidden;
-        border-left-style: hidden;
-        color: $primary;
-        font-family: $bodyFont;
-        margin-bottom: 40px; 
-        padding: 20px 20px;       
-    }
-    textarea {
-        border: 1px solid $quaternary;
-        resize: none;
-        color: $primary;
-        font-family: $bodyFont;
-        width: 100%;
-    }
-    button {
+  input {
+    width: 48%;
+    border-bottom: 1px solid $quaternary;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    color: $primary;
+    font-family: $bodyFont;
+    margin-bottom: 40px;
+    padding: 20px 20px;
+  }
+  textarea {
+    border: 1px solid $quaternary;
+    resize: none;
+    color: $primary;
+    font-family: $bodyFont;
+    width: 100%;
+  }
+  button {
     background-color: $tertiary;
     border: none;
     color: $iceBlue;
@@ -114,50 +145,88 @@ form {
     width: 100%;
     height: 40px;
     &:hover {
-        background-color: $quinary;
-        border: 2px solid $secondary;
-        color: $tertiary;
+      background-color: $quinary;
+      border: 2px solid $secondary;
+      color: $tertiary;
     }
     &:focus {
-        background-color: $quinary;
-        border: 2px solid $secondary;
-        color: $tertiary;
+      background-color: $quinary;
+      border: 2px solid $secondary;
+      color: $tertiary;
     }
-}
+  }
 }
 
 //social-media
 .social-media {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    height: 150px;
-    address {
-        font-style: normal;
-        font-family: $bodyFont;
-        font-size: 1rem;
-        line-height: 32px;
-    }
-    a {
-        text-decoration: none;
-        color: $primary;
-        font-weight: 200;
-    }
-    .email{
-        font-weight: bold;
-        margin-bottom: 20px;
-    }
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  height: 150px;
+  address {
+    font-style: normal;
+    font-family: $bodyFont;
+    font-size: 0.8rem;
+    line-height: 22px;
+    letter-spacing: 1px;
+    padding: 0 10px;
+  }
+  a {
+    text-decoration: none;
+    color: $primary;
+    font-weight: 200;
+  }
+  .email {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
 }
 
 .social-icons {
-        display: flex;
-        justify-content: space-between;
-        align-content: flex-end;
-        a {
-            padding: 10px;
-        }
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-end;
+  a {
+    padding: 10px;
+  }
+}
+
+// RESPONSIVE DESIGN
+@media (max-width: 980px) {
+  .background {
+    height: 50vh;
+  }
+
+  .navbar {
+    margin-left: 5%;
+    margin-right: 5%;
+    .logo {
+      width: 40%;
     }
+    .nav-bar {
+      width: 60%;
+    }
+  }
+}
 
+@media (max-width: 600px) {
+  .mobile-menu-icon {
+    display: block;
+  }
+  .background {
+    height: 50vh;
+  }
+  .navbar {
+    justify-content: space-between;
+    .nav-bar {
+      display: none;
+    }
+  }
 
-    // RESPONSIVE DESIGN
-    //680px
+  .user-info {
+    flex-direction: column;
+    input {
+      width: 100% !important;
+    }
+  }
+}
