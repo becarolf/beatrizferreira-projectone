@@ -7,5 +7,67 @@ $quinary: #d2f9f1;
 $iceBlue: #fafffe;
 
 // site fonts
-$headingFont: 'Playfair Display SC', sans-serif;
-$bodyFont: 'Lato', sans-serif;
+$headingFont: "Playfair Display SC", sans-serif;
+$bodyFont: "Lato", sans-serif;
+
+// text styles
+@mixin logo-small {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 900;
+  font-size: 1.73rem; /* 34.6px */
+  text-align: center;
+  color: $quaternary;
+}
+
+@mixin nav {
+  font-family: $bodyFont;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  line-height: 29px;
+  letter-spacing: 1px;
+  color: $iceBlue;
+}
+
+@mixin anchor-style($width, $height) {
+  font-family: $headingFont;
+  font-weight: 900;
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  // line-height: 44px;
+  letter-spacing: 1px;
+  text-align: center;
+  width: $width;
+  height: $height;
+  background-color: $tertiary;
+  color: $iceBlue;
+  &:hover {
+    background-color: $iceBlue;
+    border: 2px solid $tertiary;
+    color: $tertiary;
+  }
+  &:focus {
+    background-color: $iceBlue;
+    border: 1px solid $tertiary;
+    color: $tertiary;
+  }
+}
+
+@mixin heading($size, $spacing) {
+  font-family: $bodyFont;
+  font-weight: 700;
+  font-size: $size;
+  letter-spacing: $spacing;
+  line-height: 58px;
+  text-align: center;
+}
+
+@mixin body-text {
+  color: $primary;
+  font-family: $bodyFont;
+  font-weight: 400;
+  font-size: 1rem; // 20px //
+  line-height: 32px;
+  letter-spacing: 2px;
+}

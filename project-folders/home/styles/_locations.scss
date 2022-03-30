@@ -1,5 +1,5 @@
 .container-plan-ahead {
-  display: flex;
+  display: none;
   background-color: $quinary;
   h3 {
     @include heading(1.75rem, 3.8px);

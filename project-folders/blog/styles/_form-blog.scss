@@ -1,56 +1,57 @@
 form {
-    background-color: white;
-    padding: 10px;
+  background-color: white;
+  padding: 10px;
 }
 
 .form-container {
-    .user-info {
-        display: flex;
-        justify-content: space-between;
-    }
+  .user-info {
+    display: flex;
+    justify-content: space-between;
+  }
 
-    input {
-        width: 48%;
-        border-bottom: 1px solid $quaternary;
-        border-top-style: hidden;
-        border-right-style: hidden;
-        border-left-style: hidden;
-        color: $primary;
-        font-family: $bodyFont;
-        margin-bottom: 40px; 
-        padding: 20px 20px;       
-    }
+  input {
+    width: 48%;
+    border-bottom: 1px solid $quaternary;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    color: $primary;
+    font-family: $bodyFont;
+    margin-bottom: 40px;
+    padding: 20px 20px;
+  }
 }
-    textarea {
-        border: 1px solid $quaternary;
-        resize: none;
-        color: $primary;
-        font-family: $bodyFont;
-        width: 100%;
-    }
-    button {
-    background-color: $tertiary;
-    border: none;
-    color: $iceBlue;
-    cursor: pointer;
-    align-self: center;
-    font-family: $headingFont;
-    font-weight: 900;
-    font-size: 1rem;
-    line-height: 0;
-    letter-spacing: 1px;
-    margin: 40px 0;
-    text-align: center;
-    width: 100%;
-    height: 40px;
-    &:hover {
-        background-color: $quinary;
-        border: 2px solid $secondary;
-        color: $tertiary;
-    }
-    &:focus {
-        background-color: $quinary;
-        border: 2px solid $secondary;
-        color: $tertiary;
-    }
+textarea {
+  border: 1px solid $quaternary;
+  resize: none;
+  color: $primary;
+  font-family: $bodyFont;
+  width: 100%;
+  padding: 20px;
+}
+button {
+  background-color: $tertiary;
+  border: none;
+  color: $iceBlue;
+  cursor: pointer;
+  align-self: center;
+  font-family: $headingFont;
+  font-weight: 900;
+  font-size: 1rem;
+  line-height: 0;
+  letter-spacing: 1px;
+  margin: 40px 0;
+  text-align: center;
+  width: 100%;
+  height: 40px;
+  &:hover {
+    background-color: $quinary;
+    border: 2px solid $secondary;
+    color: $tertiary;
+  }
+  &:focus {
+    background-color: $quinary;
+    border: 2px solid $secondary;
+    color: $tertiary;
+  }
 }

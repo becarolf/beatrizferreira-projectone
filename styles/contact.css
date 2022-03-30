@@ -547,11 +547,8 @@ body {
 }
 
 .container-plan-ahead {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   background-color: #d2f9f1;
-  height: 750px;
 }
 
 .container-plan-ahead h3 {
@@ -623,17 +620,15 @@ body {
 }
 
 .plan-ahead .plan-text {
-  margin-right: 10%;
+  margin-left: 10%;
   margin-top: 60px;
   margin-bottom: 40px;
-}
-
-.plan-ahead .plan-text p {
   width: 50%;
 }
 
 .new-locations h3 {
   text-align: right;
+  margin-top: -10px;
 }
 
 .new-locations .location-text {
@@ -641,15 +636,13 @@ body {
   margin-top: 60px;
   margin-bottom: 40px;
   text-align: right;
-}
-
-.new-locations .location-text p {
   width: 50%;
   margin-right: 0;
 }
 
 .banner img {
   position: relative;
+  width: 100%;
 }
 
 .trip {

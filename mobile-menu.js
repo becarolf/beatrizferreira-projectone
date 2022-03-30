@@ -1,3 +1,4 @@
+// HAMBURGER MENU
 function toggleMenu() {
     console.log("HERE")
 	const x = document.getElementById("mobileMenu");
@@ -7,3 +8,6 @@ function toggleMenu() {
 		x.style.display = "block";
 	}
 }
+
+
+

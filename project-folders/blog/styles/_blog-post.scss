@@ -31,6 +31,9 @@
       padding-bottom: 30px;
       @include body-text;
     }
+    .sub-title {
+      font-style: italic;
+    }
     h3 {
       @include heading(1.6rem, 3.2px);
       color: $secondary;
@@ -69,7 +72,6 @@
 
 .comments {
   padding: 0 10%;
-  border-right: 2px solid $quaternary;
 
   p {
     margin-top: 0;
@@ -79,7 +81,6 @@
 
 .blog-form {
   padding: 0 10%;
-  border-right: 2px solid $quaternary;
 }
 
 h4 {
